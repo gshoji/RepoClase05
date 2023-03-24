@@ -6,7 +6,6 @@ import java.util.List;
 public class ItemCarrito {
 	
 	int cantidad;
-	//List<Producto> Listaprod=new ArrayList<>();
 	Producto prod;
 	double tot;
 	
@@ -19,14 +18,6 @@ public class ItemCarrito {
 	{
 		return tot=prod.getPrecio()*cantidad;
 	}
-/*	public void ItemCarrito(List<Producto> lprod,int cant)
-	{
-		for(Producto p : lprod)
-		{
-			this.Listaprod.add(p);
-			this.cantidad=cant;
-		}
 
-	}*/
 
 }
