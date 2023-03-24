@@ -13,7 +13,7 @@ public class Carrito {
 	{
 		elcarrito.add(item);
 	}
-	public double sumar()
+	public double precio()
 	{
 		for(ItemCarrito it : elcarrito)
 		{
