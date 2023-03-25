@@ -13,7 +13,7 @@ public class MainPunto2 {
 		String ruta="C:\\Users\\gasto\\OneDrive\\Escritorio\\RepoClase05\\Archivos\\items.txt";
 		List<Producto> Listaprod=new ArrayList<>();
 		List<ItemCarrito> listaitem=new ArrayList<>();
-		Producto prod=new Producto();
+		
 		
 		
 			try {
@@ -25,6 +25,7 @@ public class MainPunto2 {
 			
 				for(int i=0;i<3;i++)
 				{
+					Producto prod=new Producto();
 					prod.setId(Integer.parseInt(vec[p]));
 					prod.setPrecio(Double.parseDouble(vec[p+1]));
 					prod.setDescripcion(vec[p+2]);
@@ -39,12 +40,15 @@ public class MainPunto2 {
 				e.printStackTrace();
 			}
 			
+			
 			for(Producto pro : Listaprod)
 			{
 			    ItemCarrito item=new ItemCarrito(pro,pro.getId());
-				listaitem.add(item);
-				System.out.println("El total de "+pro.getDescripcion()+" es de: "+item.calcular());
+			    listaitem.add(item);
+				//System.out.println("El total de "+pro.getDescripcion()+" es de: "+item.calcular());
 			}
+			
+			
 			Carrito micarrito=new Carrito();
 			for(ItemCarrito it : listaitem)
 			{

@@ -18,6 +18,18 @@ public class ItemCarrito {
 	{
 		return tot=prod.getPrecio()*cantidad;
 	}
+	public Producto getProd() {
+		return prod;
+	}
+	public void setProd(Producto prod) {
+		this.prod = prod;
+	}
+	public double getTot() {
+		return tot;
+	}
+	public void setTot(double tot) {
+		this.tot = tot;
+	}
 
 
 }

@@ -1,1 +1,1 @@
-1,40,Jabon en polvo,3,10,Esponja,2,100,Chocolate
+1,40,Jabon en polvo,3,10,Esponja,5,100,Chocolate
