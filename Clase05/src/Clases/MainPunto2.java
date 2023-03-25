@@ -31,7 +31,6 @@ public class MainPunto2 {
 					prod.setDescripcion(vec[p+2]);
 					Listaprod.add(prod);
 					p=p+3;
-					//System.out.println("Producto "+prod.getDescripcion()+" Precio: "+prod.getPrecio());
 				}
 		
 			} catch (IOException e) {
@@ -45,7 +44,6 @@ public class MainPunto2 {
 			{
 			    ItemCarrito item=new ItemCarrito(pro,pro.getId());
 			    listaitem.add(item);
-				//System.out.println("El total de "+pro.getDescripcion()+" es de: "+item.calcular());
 			}
 			
 			
