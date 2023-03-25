@@ -18,6 +18,7 @@ public class Carrito {
 		for(ItemCarrito it : elcarrito)
 		{
 			total+=it.calcular();
+			//System.out.println("Producto: "+it.calcular());
 		}
 		System.out.println("El total del carrito es: "+total);
 		return total;

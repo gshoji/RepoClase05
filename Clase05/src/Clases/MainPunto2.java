@@ -22,13 +22,15 @@ public class MainPunto2 {
 					vec=linea.split(",");
 				}
 				int p=0;
-				for(int i=0;i<vec.length;i++)
+			
+				for(int i=0;i<3;i++)
 				{
 					prod.setId(Integer.parseInt(vec[p]));
 					prod.setPrecio(Double.parseDouble(vec[p+1]));
 					prod.setDescripcion(vec[p+2]);
-					p=p+3;
 					Listaprod.add(prod);
+					p=p+3;
+					//System.out.println("Producto "+prod.getDescripcion()+" Precio: "+prod.getPrecio());
 				}
 		
 			} catch (IOException e) {
@@ -39,8 +41,9 @@ public class MainPunto2 {
 			
 			for(Producto pro : Listaprod)
 			{
-				ItemCarrito item=new ItemCarrito(pro,pro.getId());
+			    ItemCarrito item=new ItemCarrito(pro,pro.getId());
 				listaitem.add(item);
+				System.out.println("El total de "+pro.getDescripcion()+" es de: "+item.calcular());
 			}
 			Carrito micarrito=new Carrito();
 			for(ItemCarrito it : listaitem)
