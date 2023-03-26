@@ -44,8 +44,18 @@ public class Main {
 		System.out.println("2- Descuento por porcentaje");
 		System.out.println("3- Descuento con tope");
 		int op=lee.nextInt();
-		System.out.println("Ingrese monto o porcentaje de descuento:");
-		int descuento=lee.nextInt();
+		int descuento;
+		if(op==1)
+		{
+			System.out.println("Ingrese monto de descuento:");
+			descuento=lee.nextInt();
+		}
+		else
+		{
+			System.out.println("Ingrese porcentaje de descuento:");
+			descuento=lee.nextInt();
+		}
+		
 		
 		Carrito micarrito=new Carrito();
 		micarrito.agregar(item1);
