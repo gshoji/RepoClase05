@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Carrito {
 	double total;
+
 		
 	List<ItemCarrito> elcarrito=new ArrayList<>();
 	public void Carrito() {}
@@ -13,6 +14,7 @@ public class Carrito {
 	public void agregar(ItemCarrito item)
 	{
 		elcarrito.add(item);
+		
 	}
 	public double precio()
 	{
@@ -20,7 +22,7 @@ public class Carrito {
 		{
 			total+=it.calcular();
 		}
-		System.out.println("El total del carrito es: "+total);
+		//System.out.println("El total del carrito es: "+total);
 		return total;
 	}
 
