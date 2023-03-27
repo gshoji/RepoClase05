@@ -10,7 +10,7 @@ public class MainPunto2 {
 
 	public static void main(String[] args) {
 		String vec[]=new String[50];
-		String ruta="C:\\Users\\gasto\\OneDrive\\Escritorio\\RepoClase05\\Archivos\\items.txt";
+		String ruta="C:\\Users\\gasto\\Documents\\GitHub\\RepoClase05\\Archivos\\items.txt";
 		List<Producto> Listaprod=new ArrayList<>();
 		List<ItemCarrito> listaitem=new ArrayList<>();
 		
