@@ -22,8 +22,10 @@ public class MainPunto2 {
 					vec=linea.split(",");
 				}
 				int p=0;
+				//divide la cantidad de datos en grupos de 3 para saber la cantidad de items
+				int cant=vec.length/3;
 			
-				for(int i=0;i<3;i++)
+				for(int i=0;i<cant;i++)
 				{
 					Producto prod=new Producto();
 					prod.setId(Integer.parseInt(vec[p]));
