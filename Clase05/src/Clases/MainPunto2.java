@@ -52,7 +52,8 @@ public class MainPunto2 {
 			{
 				micarrito.agregar(it);
 			}
-			micarrito.precio();
+			System.out.println("El total del carrito es: "+micarrito.precio());
+			
 		
 		
 

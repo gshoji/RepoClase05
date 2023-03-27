@@ -22,6 +22,7 @@ public class Carrito {
 		{
 			total+=it.calcular();
 		}
+		
 		//System.out.println("El total del carrito es: "+total);
 		return total;
 	}
