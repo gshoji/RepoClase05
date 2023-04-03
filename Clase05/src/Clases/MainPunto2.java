@@ -17,7 +17,7 @@ public class MainPunto2 {
 		
 		
 			try {
-				for (String linea : Files.readAllLines(Paths.get(ruta)))
+				for (String linea : Files.readString(Paths.get(ruta)))
 				{
 					vec=linea.split(",");
 				}
@@ -34,6 +34,7 @@ public class MainPunto2 {
 					Listaprod.add(prod);
 					p=p+3;
 				}
+			
 		
 			} catch (IOException e) {
 
@@ -41,14 +42,14 @@ public class MainPunto2 {
 				e.printStackTrace();
 			}
 			
-			
+			//agrego los items a la lista
 			for(Producto pro : Listaprod)
 			{
 			    ItemCarrito item=new ItemCarrito(pro,pro.getId());
 			    listaitem.add(item);
 			}
 			
-			
+			//agrego la lista de items al carrito
 			Carrito micarrito=new Carrito();
 			for(ItemCarrito it : listaitem)
 			{
